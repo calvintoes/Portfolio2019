@@ -115,7 +115,6 @@ header{
 /* Parallax Section */
 .banner {
 	background-color: #F7C331;
-	background-image: url(../../../images/parallax.png);
 	height: 400px;
 	background-attachment: fixed;
 	background-size: cover;
@@ -272,7 +271,7 @@ footer {
 .fancy-text {
 	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
 	font-size: 12pt;
-	padding: 5px;
+	padding: 5px 0;
 }
 
 /* Mobile */
