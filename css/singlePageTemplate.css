@@ -444,3 +444,25 @@ footer {
 }
 
 
+
+.orange-gradient {
+	background: #FF5F6D;  /* fallback for old browsers */
+background: -webkit-linear-gradient(left, #FFC371, #FF5F6D);
+background: -o-linear-gradient(left, #FFC371, #FF5F6D);
+background: linear-gradient(to right, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.blue-gradient {
+	background: #373B44;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.azure-gradient {
+	background: #7F7FD5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
