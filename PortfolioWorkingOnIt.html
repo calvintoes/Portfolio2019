@@ -104,87 +104,89 @@
 	<div class="container pb-5" id="portfolio">
 		<h2 class="text-center pb-3">My Recent Work</h2>
 	  <section>
-		<div class="row mini_nav d-flex justify-content-around mb-3 border border-white rounded portfolioMenu">	
+		<div class="row mini_nav d-flex justify-content-around mb-3 border border-white rounded" >	
 			<div class="box">
-				<div class="row">
-					<div class="col-sm-12 col-lg-3 basic_text pressed hvr-underline-from-center p-item active"
-						 oncick="filterSelections('All')">All</div>
-					<div class="col-sm-12 col-lg-3 basic_text pressed hvr-underline-from-center p-item"
-						 oncick="filterSelections('development')">Development</div>
-					<div class="col-sm-12 col-lg-3 basic_text pressed hvr-underline-from-center p-item"
-						 oncick="filterSelections('design')">Design</div>
-					<div class="col-sm-12 col-lg-3 basic_text pressed hvr-underline-from-center p-item"
-						 oncick="filterSelections('misc')">MISC</div>
+				<div class="row" id="portfolioMenu">
+					<div class="col-sm-12 col-lg-3 basic_text pressed hvr-underline-from-center p-item active" data-filter="all">All</div>
+					<div class="col-sm-12 col-lg-3 basic_text pressed hvr-underline-from-center p-item" data-filter="development">Development</div>
+					<div class="col-sm-12 col-lg-3 basic_text pressed hvr-underline-from-center p-item" data-filter="design">Design</div>
+					<div class="col-sm-12 col-lg-3 basic_text pressed hvr-underline-from-center p-item" data-filter="misc">MISC</div>
 				</div>		
 			</div>
 		</div>
 	  </section>
 	
 <!-- Stats Gallery Section -->
-		<div class="container">
-			<div class="card-deck py-1">
-			 <div class="card azure-gradient development filterDiv"> 
-				<a href="#" target="_blank"></a>
-				<div class="card-body">
-				  <h5 class="card-title text-right">Restaurant App</h5>
-				  <p class="text-right">Built with VueJS, Materialize, Google Firebase</p>
+		<div class="container" id="contentHolder">
+			<div class="development">
+				<div class="card-deck py-5">
+				 <div class="card azure-gradient"> 
+					<a href="#" target="_blank"></a>
+					<div class="card-body">
+					  <h5 class="card-title text-right">Restaurant App</h5>
+					  <p class="text-right">Built with VueJS, Materialize, Google Firebase</p>
+					</div>
+				  </div>
+				  <div class="card orange-gradient">
+					<a href="#" target="_blank"></a>
+					<div class="card-body">
+					  <h5 class="card-title text-center">Audio Visualizer</h5>
+					  <p class="text-center">Built with Javascript, Boootstrap</p>
+					</div>
+				  </div>
+				  <div class="card blue-gradient">
+					<a href="#" target="_blank"></a>
+					<div class="card-body ">
+					  <h5 class="card-title text-center">Remake: Asteroids</h5>
+					  <p class="text-center">Built with Unity, C#</p>
+					</div>
+					</div>
 				</div>
-			  </div>
-			  <div class="card orange-gradient development filterDiv">
-				<a href="#" target="_blank"></a>
-				<div class="card-body">
-				  <h5 class="card-title text-center">Audio Visualizer</h5>
-				  <p class="text-center">Built with Javascript, Boootstrap</p>
-				</div>
-			  </div>
-			  <div class="card blue-gradient development filterDiv">
-				<a href="#" target="_blank"></a>
-				<div class="card-body ">
-				  <h5 class="card-title text-center">Remake: Asteroids</h5>
-				  <p class="text-center">Built with Unity, C#</p>
-				</div>
-				</div>
-			</div>	
-			<div class="card-deck py-1">
-			  <div class="card design filterDiv">
-				<a href="#" target="_blank"></a>
-				<div class="card-body">
-				  <h5 class="card-title text-center">RIT Photo Cage</h5>
-				</div>
-			  </div>
-			  <div class="card design filterDiv" style="background-color: #DCC7AA">
-				<a href="#" target="_blank"></a>
-				<div class="card-body">
-				  <h5 class="card-title text-center">Social Awareness Poster Designs</h5>
-				</div>
-			  </div>
-			  <div class="card design filterDiv" style="background-color: #F7882F">
-				<a href="#" target="_blank"></a>
-				<div class="card-body">
-				  <h5 class="card-title text-center">...</h5>
-				</div>
-			  </div>
 			</div>
-			<div class="card-deck py-1">
-			  <div class="card misc filterDiv" style="background-color: #F7882F">
-				<a href="#" target="_blank"></a>
-				<div class="card-body">
-				  <h5 class="card-title text-center">Lacers</h5>
+			<div class="design">
+				<div class="card-deck py-5">
+				  <div class="card">
+					<a href="#" target="_blank"></a>
+					<div class="card-body">
+					  <h5 class="card-title text-center">RIT Photo Cage</h5>
+					</div>
+				  </div>
+				  <div class="card" style="background-color: #DCC7AA">
+					<a href="#" target="_blank"></a>
+					<div class="card-body">
+					  <h5 class="card-title text-center">Social Awareness Poster Designs</h5>
+					</div>
+				  </div>
+				  <div class="card" style="background-color: #F7882F">
+					<a href="#" target="_blank"></a>
+					<div class="card-body">
+					  <h5 class="card-title text-center">...</h5>
+					</div>
+				  </div>
 				</div>
-			  </div>
-			  <div class="card misc filterDiv" style="background-color: #DCC7AA">
-				<a href="#" target="_blank"></a>
-				<div class="card-body">
-				  <h5 class="card-title text-center">...</h5>
+			</div>
+			<div class="misc">
+				<div class="card-deck py-5">
+				  <div class="card " style="background-color: #F7882F">
+					<a href="#" target="_blank"></a>
+					<div class="card-body">
+					  <h5 class="card-title text-center">Lacers</h5>
+					</div>
+				  </div>
+				  <div class="card" style="background-color: #DCC7AA">
+					<a href="#" target="_blank"></a>
+					<div class="card-body">
+					  <h5 class="card-title text-center">...</h5>
+					</div>
+				  </div>
+				  <div class="card" style="background-color: #F7882F">
+					<a href="#" target="_blank"></a>
+					<div class="card-body">
+					  <h5 class="card-title text-center">...</h5>
+					</div>
+				  </div>
 				</div>
-			  </div>
-			  <div class="card misc filterDiv" style="background-color: #F7882F">
-				<a href="#" target="_blank"></a>
-				<div class="card-body">
-				  <h5 class="card-title text-center">...</h5>
-				</div>
-			  </div>
-			</div>	
+			</div>
 		</div>		  
 	</div>	
 
